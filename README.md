@@ -1,3 +1,76 @@
+# ############################################
+Project - Online Exam
+
+
+
+Online Exam - MCQ (Exclude - Upload and Paragraph)
+
+
+planning - business - project manager, scrum master, product owner, business analyst
+
+
+agile - new approach sdlc
+waterfall - 
+agile - scrum, kanaban, xp
+
+--------------------------------------------
+student----------------------------
+login/registration - id and roll no verification
+
+list of exams - exam code, category matching, exam date duration
+
+take an exam - system check, (webcam, audio, screen share) access, instructions, start - timing manag,
+            --sections, list of questions, question pallete, (done, remaining), (save, reset, next, prev), answer capture, submit
+
+result calculation - report
+
+list of all given exams - all exam reports, graphs
+
+dashboard - all previous reports, rank, badges
+
+certificate
+
+profile - change password, settings, userimage, subjects/topics
+
+payments - wallet, add money, pay for exam, payment gateway, coupons
+-----------------------------------------------
+teacher -----------------------------
+categories - subject/topic
+add qs
+create exam
+student report - examwise, studentwise
+dashboard, profile
+profile of students
+-----------------------------------------------
+admin ------------------------------
+add student
+add teacher
+payment access
+reports - 
+techer report - exams wise
+dashboard, profile
+coupons
+price of exams
+profile of all - student, teacher
+-----------------------------------------------
+email, sms
+techer create
+payment
+credit basis exam - due reminder
+mail for result - 
+
+
+
+
+
+
+
+
+
+
+
+
+# ############################################
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
