@@ -16,6 +16,12 @@ Database - MongoDB
 
 MERN Full Stack
 
+templates
+https://startbootstrap.com/previews/sb-admin-pro
+https://spruko.com/demo/sash/sash/html/index.html
+https://www.spruko.com/demo/valex/Valex/HTML-LTR/Leftmenu-Icon-Light-Sidebar/index.html
+
+
 --------------------------------------------
 Login Type 1 - student----------------------------
 Module 1 - login/registration - id and roll no verification
