@@ -10,6 +10,12 @@ waterfall - traditional
 
 agile - scrum, kanaban, xp
 
+Front End Repo - React
+Back End Repo - Node Express
+Database - MongoDB
+
+MERN Full Stack
+
 --------------------------------------------
 Login Type 1 - student----------------------------
 Module 1 - login/registration - id and roll no verification
