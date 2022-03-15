@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {Form, Button, Row, Col} from 'react-bootstrap';
-
+import {useDispatch} from 'react-redux';
+import { ADD_USER, SHOW_USER, UPDATE_USER, DELETE_USER, SHOW_USERS } from './../../actions/actions_users';
 
 const Users = () => {
-    const [users, setusers] = useState([]); //to store list of all users
+    const [users, setUsers] = useState([]); //to store list of all users
     const [single_user, setSingle_User] = useState({}); //to store single saved user
 
     const initialValues = {userid: '', username: '', name: '', email: ''};
@@ -11,7 +12,7 @@ const Users = () => {
 
     const handleSubmit =(e) => {
         e.preventDefault();
-        console.log(JSON.stringify(formValues));
+        console.log(JSON.stringify(formValues)); //rest api - json stringified
         fetch('http://localhost:4000/users/',{
             method: 'POST',
             headers: {
@@ -31,6 +32,21 @@ const Users = () => {
         console.log(e.target.value, e.target.name);
         setFormValues({...formValues, [e.target.name]: e.target.value });
     }
+
+    const displayUsers =() => {
+        fetch('http://localhost:4000/users/')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            setUsers(data);
+        })
+    }
+
+    useEffect(() => {
+        console.log('testing data from api...');
+    },[users])
+
+    const dispatch = useDispatch();
 
     return(
         <>
@@ -61,8 +77,38 @@ const Users = () => {
 
                         <Button variant="primary" type="submit">
                             Submit
-                        </Button>
+                        </Button>                     
                     </Form>
+                </Col>
+            </Row>
+
+
+            <Row>
+                <Col>
+                    <Button onClick={displayUsers}>Display All Users</Button>
+
+                    <Button variant="secondary" onClick = {() => dispatch({type: 'ADD_USER'})}>
+                            Test Redux console...
+                        </Button>  
+                </Col>
+            </Row>
+
+            <Row>
+                <Col>
+                Data from API
+
+                {
+                            users.length
+                }
+                    
+                    {
+                            users && users.map((item) => (
+                                <>
+                                <div>Count</div>
+                                <div>{item.userid} - {item.username} - {item.name} - {item.email}</div>
+                                </>
+                            ))
+                        }
                 </Col>
             </Row>
         </>
