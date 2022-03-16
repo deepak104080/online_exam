@@ -116,3 +116,18 @@ const Users = () => {
 }
 
 export default Users;
+
+
+// REDUX
+
+// ACTION - user action - type, payload
+// STORE - group of state varibales - single
+// REDUCER - custom logic whcih works on basis of switch - action, state/store
+
+// npm install - redux, react-redux
+// actions
+// reducers
+// store
+// connect store to app
+// provider
+// selector, dispatcher
