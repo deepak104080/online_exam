@@ -1,15 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { Provider } from 'react-redux';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from './store';
-import {Provider} from 'react-redux';
 
 store.subscribe(() => {
-  console.log(store.getState())
-})
-
+  console.log(store.getState());
+});
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,7 +16,7 @@ ReactDOM.render(
       <App />
     </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function

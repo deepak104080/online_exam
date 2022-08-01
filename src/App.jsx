@@ -1,14 +1,15 @@
-import logo from './logo.svg';
+import React from 'react';
+// import logo from './logo.svg';
 import './App.css';
-import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Users from './components/users/Users';
 
 function App() {
   return (
-    <Users/>
+    <Users />
     // <div className="container-fluid">
     //   <div className="row">
-    //     <div className="col-sm-3 bg-primary">  
+    //     <div className="col-sm-3 bg-primary">
     //         <div className="row border-bottom border-5">
     //           <div className="col-sm-12 ">
     //             Valex
@@ -20,10 +21,10 @@ function App() {
     //           </div>
     //         </div>
     //     </div>
-    //     <div className="col-9 bg-info">  
+    //     <div className="col-9 bg-info">
     //       <div className="row border-bottom border-5">
     //           <div className="col-sm-12 ">
-    //             Icon1 Icon2 
+    //             Icon1 Icon2
     //           </div>
     //       </div>
     //       <div className="row border-bottom border-5">
@@ -66,15 +67,15 @@ function App() {
     //   </div>
     // </div>
 
-    // <Container>
-    //   <Row>
-    //     <Col sm="3">
-    //     </Col>
-    //   </Row>
-    //   <Row>
+  // <Container>
+  //   <Row>
+  //     <Col sm="3">
+  //     </Col>
+  //   </Row>
+  //   <Row>
 
-    //   </Row>
-    // </Container>
+  //   </Row>
+  // </Container>
   );
 }
 
@@ -97,7 +98,6 @@ export default App;
 //     width:60%;
 //   }
 // }
-
 
 // @media only screen and (min-width: 900px) {
 //   .col-lg-3 {

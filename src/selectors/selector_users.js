@@ -1,5 +1,4 @@
-//selectors
-import {useSelector} from 'react-redux';
+// selectors
+import { useSelector } from 'react-redux';
 
-
-    //const localtemp = useSelector((state), state.store_users);
+// const localtemp = useSelector((state), state.store_users);
